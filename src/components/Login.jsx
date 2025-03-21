@@ -1,8 +1,13 @@
 import  '../styles/Login.css';
+import loginicon from '../assets/loginicon.png'
 import {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 
 export default function Login(){
-    const [user, setUser]= useState({email:"",password:""})
+    const [user, setUser]= useState({email:"",password:""});
+    const navigate = useNavigate();
+
+
 
  function handleChange(event){
     setUser((prevUser)=>({...prevUser,[event.target.name] : event.target.value}))
@@ -41,20 +46,31 @@ export default function Login(){
     }
 
     return(<>
-    
-            <form onSubmit={(event)=>handleSubmit(event)}>
-                <div className="parent-container">
-                    <div>
-                        <input name="email" type="email" placeholder="Email" value={user.email} onChange={(event)=>handleChange(event)}/>
+          <div className="login-component">
+               <form onSubmit={(event)=>handleSubmit(event)} className="login-form">
+                    <div className="login-parent-container">
+                        <div className="login-child-container">
+                            <img src={loginicon} id="login-icon" />
+                            <h2>Login</h2>
+                        </div>
+                        <div className="login-child-container">
+                            <input className="login-input" name="email" type="email" placeholder="Email" value={user.email} onChange={(event)=>handleChange(event)}/>
+                        </div>
+                        <div className="login-child-container">
+                            <input  className="login-input"  name="password" type="password" placeholder="Password" value={user.password} onChange={(event)=>handleChange(event)}/>
+                        </div>
+                        <div className="login-child-container">
+                            <button id="login" type="submit">Submit</button>
+                        </div>   
                     </div>
-                    <div>
-                        <input name="password" type="password" placeholder="Password" value={user.password} onChange={(event)=>handleChange(event)}/>
-                    </div>
-                    <div>
-                        <button type="submit">Submit</button>
-                    </div>   
+            
+                </form>
+
+                <div>
+                    <div> <h3>Don't have an account ?</h3></div>
+                    <div><button id="navigate-signup" onClick={()=>navigate('/')}>Create an account!</button></div>
                 </div>
-           
-            </form>
+           </div>
+
            </>)
 }

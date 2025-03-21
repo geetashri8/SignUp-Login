@@ -1,44 +1,106 @@
+.signup-form {
+    height:45vh;
+    width:50vh;
+    outline:none;
+    border:2px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    background-color:wheat;
 
-form {
+    
+}
+button{
+    background-color: rgb(167, 208, 208);
+    
+}
+#signup{
+    box-shadow: 5px 5px 10px gray;
+    color:rgb(255, 253, 250);
+} 
+.signup-icon-class{
+    display: flex;
+    flex-direction: row;
+}
+#signup-icon{
+    height:5vh;
+    width:6vh;
+}  
+.signup-parent-container{
     height:40vh;
     width:50vh;
-    border:2px solid;
-    border-radius: 4px;
-}
+    padding:30px;
+    border-radius: 0px 0px 15px 15px;
+    box-sizing: border-box;
+    background-color:wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
-input{
+    
+}
+ .signup-child-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    width:40vh;
+    height:5vh;
+    text-align: center;
+
+ }
+
+.signup-input{
     border:none;
     background-color:wheat;
     border-bottom: 2px solid;
     outline:none;
     width:40vh;
-}
-button{
-    background-color: rgb(167, 208, 208);
+    
 }
 
 .password{
-    width:50vh;
-} 
-.button-show{
     
-    padding:2px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.password > input{
+    width:35vh;
+}
+.password >  button{
+    
+    width:5vh;
+    border:none;
+    outline:none;
+    background-color:wheat;  
+    
+} 
+
+.confirm-password{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ .confirm-password > input{
+    width:35vh;
+ }
+
+.confirm-password > button{
+    width:5vh;
     border:none;
     outline:none;
     background-color:wheat;
-    width:3rem;
-}
+     
 
-.password-input{
-    width:35vh;
 }
-
-.parent-container{
-    height:40vh;
-    width:50vh;
-    background-color:wheat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#login-button{
+    box-shadow: 5px 5px 10px gray;
     
-}
+} 

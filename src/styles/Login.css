@@ -1,26 +1,60 @@
-form {
-    height:40vh;
-    width:50vh;
-    border:2px solid;
-    border-radius: 4px;
-}
 
-input{
+.login-component{
+    height:40vh;
+    width:40vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between; 
+    align-items:center;
+}
+.login-form {
+    height:30vh;
+    width:40vh;
+    outline:none;
+}
+.login-parent-container{
+    height:30vh;
+    width:40vh;
+    padding:30px;
+    border:2px solid ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color:wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.login-child-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    width:35vh;
+    height:5%;
+    text-align: center;
+}
+#login-icon{
+    height:5vh;
+    width:5vh;
+}
+.login-input{
     border:none;
     background-color:wheat;
     border-bottom: 2px solid;
     outline:none;
-    width:40vh;
+    width:35vh;
 }
-button{
-    background-color: rgb(167, 208, 208);
-}
-.parent-container{
-    height:40vh;
-    width:50vh;
-    background-color:wheat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#login{
     
+    background-color: rgb(167, 208, 208);
+    color:rgb(255, 253, 250);
+    box-shadow: 5px 5px 10px gray;
+}
+#navigate-signup{
+    background-color: rgb(167, 208, 208);
+    color:rgb(255, 253, 250);
+    box-shadow: 5px 5px 10px gray;
 }
