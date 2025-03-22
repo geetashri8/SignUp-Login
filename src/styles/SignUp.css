@@ -1,6 +1,24 @@
+.signup-component{
+    margin: 0 auto;
+    padding: 1rem;
+    height: 35em;
+    width: 35em;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    border:0px solid black;
+    border-radius:15px;
+    background-color: none;
+    position:relative;
+    
+    
+}/*background-color: brown;*/
+
 .signup-form {
-    height:45vh;
-    width:50vh;
+
+    position:relative;
     outline:none;
     border:2px solid;
     border-radius: 15px;
@@ -8,7 +26,8 @@
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    background-color:wheat;
+    
+    background-color:rgb(200, 141, 32);
 
     
 }
@@ -22,23 +41,36 @@ button{
 } 
 .signup-icon-class{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: wheat;
+    width:30em;
+    height:3em;
+    border:2px solid;
+    box-sizing: border-box;
+    border-radius:15px 15px 0px 0px;
+    text-align: center;
+    
 }
 #signup-icon{
     height:5vh;
     width:6vh;
 }  
 .signup-parent-container{
-    height:40vh;
-    width:50vh;
-    padding:30px;
+    height:25em;
+    width:30em;
+    padding: 1em;
+    position:absolute;
+    border: 2px solid;
     border-radius: 0px 0px 15px 15px;
     box-sizing: border-box;
     background-color:wheat;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    box-shadow: 5px 5px 10px gray;
 
     
 }
@@ -47,9 +79,9 @@ button{
     flex-direction:column;
     align-items:center;
     justify-content: center;
-    width:40vh;
-    height:5vh;
-    text-align: center;
+    width:26em;
+    height:3em;    
+
 
  }
 
@@ -58,24 +90,25 @@ button{
     background-color:wheat;
     border-bottom: 2px solid;
     outline:none;
-    width:40vh;
+    box-sizing: border-box;    
+    width:100%;
     
 }
 
 .password{
-    
+    width:100%;
     display:flex;
     flex-direction: row;
     align-items:center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .password > input{
-    width:35vh;
+    width:90%;
 }
 .password >  button{
     
-    width:5vh;
+    width:10%;
     border:none;
     outline:none;
     background-color:wheat;  
@@ -86,16 +119,18 @@ button{
     
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
 }
  .confirm-password > input{
-    width:35vh;
+    width:90%;
  }
 
 .confirm-password > button{
-    width:5vh;
+    width:10%;
     border:none;
     outline:none;
+    
     background-color:wheat;
      
 

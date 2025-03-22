@@ -46,31 +46,33 @@ export default function Login(){
     }
 
     return(<>
-          <div className="login-component">
-               <form onSubmit={(event)=>handleSubmit(event)} className="login-form">
-                    <div className="login-parent-container">
-                        <div className="login-child-container">
-                            <img src={loginicon} id="login-icon" />
-                            <h2>Login</h2>
+        <div className="login-component">
+            <div className="login-component-child">
+                <form onSubmit={(event)=>handleSubmit(event)} className="login-form">
+                        <div className="login-parent-container">
+                            <div className="login-child-container">
+                                <img src={loginicon} id="login-icon" />
+                                <h2>Login</h2>
+                            </div>
+                            <div className="login-child-container">
+                                <input className="login-input" name="email" type="email" placeholder="Email" value={user.email} onChange={(event)=>handleChange(event)}/>
+                            </div>
+                            <div className="login-child-container">
+                                <input  className="login-input"  name="password" type="password" placeholder="Password" value={user.password} onChange={(event)=>handleChange(event)}/>
+                            </div>
+                            <div className="login-child-container">
+                                <button id="login" type="submit">Submit</button>
+                            </div>   
                         </div>
-                        <div className="login-child-container">
-                            <input className="login-input" name="email" type="email" placeholder="Email" value={user.email} onChange={(event)=>handleChange(event)}/>
-                        </div>
-                        <div className="login-child-container">
-                            <input  className="login-input"  name="password" type="password" placeholder="Password" value={user.password} onChange={(event)=>handleChange(event)}/>
-                        </div>
-                        <div className="login-child-container">
-                            <button id="login" type="submit">Submit</button>
-                        </div>   
-                    </div>
-            
+                
                 </form>
-
-                <div>
+            </div>
+            <div className="login-component-child">
                     <div> <h3>Don't have an account ?</h3></div>
                     <div><button id="navigate-signup" onClick={()=>navigate('/')}>Create an account!</button></div>
-                </div>
-           </div>
+            </div>
+              {/**/} 
+        </div>
 
-           </>)
+        </>)
 }

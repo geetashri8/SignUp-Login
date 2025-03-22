@@ -119,9 +119,9 @@ export default function SignUp(){
     }
 
     return(
-        <>
-            <form onSubmit={(event)=>handleSubmit(event)} className="signup-form">
-                <div className="signup-icon-class">{/*<img id ="signup-icon" src={signup} />*/}<h2>Sign Up</h2></div>
+        <div className="signup-component">
+            <div className="signup-icon-class">{/*<img id ="signup-icon" src={signup} />*/}<h2>Sign Up</h2></div>
+            <div className="signup-form"><form onSubmit={(event)=>handleSubmit(event)} className="signup-form">     
                 <div className="signup-parent-container" >
                     <div className="signup-child-container">
                         <input className="signup-input" type="text" value={signUpDetails.name} placeholder="Enter your name..." onChange={(event)=>{handleChange(event,1)}} required/>
@@ -148,12 +148,10 @@ export default function SignUp(){
                     <div className="signup-child-container">
                         <button type="submit" id="signup">Sign up</button>
                     </div>
-                </div>
-
-                
+                </div>             
             
-            </form>
-            <LoginDiv />
-        </>
+            </form></div>
+            <div><LoginDiv /></div>
+        </div>
     )
  }

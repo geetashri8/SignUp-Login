@@ -1,21 +1,31 @@
 
 .login-component{
-    height:40vh;
-    width:40vh;
+    height:28rem;
+    width:30rem;
     display:flex;
     flex-direction:column;
-    justify-content:space-between; 
+    justify-content:space-evenly; 
     align-items:center;
+ 
+    border: 0px solid;
+    padding:1em;
+    
+}
+.login-component-child{
+ 
+    width:100%;
 }
 .login-form {
-    height:30vh;
-    width:40vh;
+    margin:0 auto;
+    height:18em;
+    width:24em;
     outline:none;
+ 
 }
 .login-parent-container{
-    height:30vh;
-    width:40vh;
-    padding:30px;
+    height:100%;
+    width:100%;
+    padding:2em;
     border:2px solid ;
     border-radius: 10px;
     box-sizing: border-box;
@@ -32,20 +42,21 @@
     flex-direction:row;
     align-items:center;
     justify-content: center;
-    width:35vh;
+    width:100%;
     height:5%;
     text-align: center;
+  
 }
 #login-icon{
-    height:5vh;
-    width:5vh;
+    height:2em;
+    width:2em;
 }
 .login-input{
     border:none;
     background-color:wheat;
     border-bottom: 2px solid;
     outline:none;
-    width:35vh;
+    width:100%;
 }
 #login{
     
