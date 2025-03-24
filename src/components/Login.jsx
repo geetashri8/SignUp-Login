@@ -55,10 +55,10 @@ export default function Login(){
                                 <h2>Login</h2>
                             </div>
                             <div className="login-child-container">
-                                <input className="login-input" name="email" type="email" placeholder="Email" value={user.email} onChange={(event)=>handleChange(event)}/>
+                                <input className="login-input" name="email" type="email" placeholder="Email..." value={user.email} onChange={(event)=>handleChange(event)}/>
                             </div>
                             <div className="login-child-container">
-                                <input  className="login-input"  name="password" type="password" placeholder="Password" value={user.password} onChange={(event)=>handleChange(event)}/>
+                                <input  className="login-input"  name="password" type="password" placeholder="Password..." value={user.password} onChange={(event)=>handleChange(event)}/>
                             </div>
                             <div className="login-child-container">
                                 <button id="login" type="submit">Submit</button>

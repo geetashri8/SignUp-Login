@@ -92,9 +92,21 @@ button{
     outline:none;
     box-sizing: border-box;    
     width:100%;
+    font-size: large;
     
 }
-
+input{
+    background-color: wheat !important;
+}
+input:-webkit-autofill {
+    background-color: wheat !important;
+    -webkit-box-shadow: 0 0 0px 1000px wheat inset !important;
+  }
+  
+  input:-webkit-autofill:focus {
+    background-color: wheat !important;
+    -webkit-box-shadow: 0 0 0px 1000px wheat inset !important;
+  }
 .password{
     width:100%;
     display:flex;
